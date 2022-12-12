@@ -29,6 +29,8 @@ namespace DigitalClock
         {
             label1.Text = DateTime.Now.ToString("hh:mm");
             label2.Text = DateTime.Now.ToString("D");
+            label3.Text = DateTime.Now.ToString("dddd");
+            label4.Text = DateTime.Now.ToString("ss");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -36,5 +38,7 @@ namespace DigitalClock
             StartTimer();
             ShowDateTime( sender,  e);
         }
+
+
     }
 }
